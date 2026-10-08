@@ -1,0 +1,532 @@
+
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FORMA — Мягкая мебель на заказ</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+<header class="header">
+    <a href="#home" class="logo">FORMA<span>.</span></a>
+
+    <nav class="nav" id="nav">
+        <a href="#home">Главная</a>
+        <a href="#gallery">Наши модели</a>
+        <a href="#about">О нас</a>
+        <a href="#steps">Как заказать</a>
+        <a href="#contacts">Контакты</a>
+    </nav>
+
+    <button class="btn btn-dark header-order open-order">
+        Рассчитать стоимость ↗
+    </button>
+
+    <button class="favorites-header" id="favoritesButton"
+        type="button" aria-label="Показать избранное">
+    ♡
+    <span id="favoritesCount">0</span>
+</button>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Меню">☰</button>
+</header>
+
+<main>
+
+    <!-- ГЛАВНЫЙ ЭКРАН -->
+
+    <section class="hero" id="home">
+
+        <div class="hero-content">
+            <span class="eyebrow">МЯГКАЯ МЕБЕЛЬ НА ЗАКАЗ</span>
+
+            <h1>
+                Комфорт,
+                созданный
+                <em>для вас.</em>
+            </h1>
+
+            <p>
+                Изготавливаем диваны, мягкие уголки и пуфики
+                по индивидуальным размерам.
+                Покажите нам фотографию понравившейся мебели —
+                мы воплотим вашу идею в жизнь.
+            </p>
+
+            <div class="hero-buttons">
+                <button class="btn btn-dark open-order">
+                    Рассчитать заказ ↗
+                </button>
+
+                <a href="#gallery" class="btn btn-outline">
+                    Смотреть модели
+                </a>
+            </div>
+
+            <div class="hero-features">
+                <span>✦ Ваши размеры</span>
+                <span>✦ Выбор ткани</span>
+                <span>✦ По вашему фото</span>
+            </div>
+        </div>
+
+        <div class="hero-image">
+            <img src="images/divan2.jpg" alt="Мягкая мебель на заказ">
+
+            <div class="hero-badge">
+                <strong>100%</strong>
+                <span>Индивидуальный подход</span>
+            </div>
+        </div>
+
+    </section>
+
+    <!-- БЕГУЩАЯ СТРОКА -->
+
+    <div class="marquee">
+        <div class="marquee-track">
+            <span>ДИВАНЫ НА ЗАКАЗ ✦ ПУФИКИ ✦ МЯГКИЕ УГОЛКИ ✦ ВАШИ РАЗМЕРЫ ✦ </span>
+            <span>ДИВАНЫ НА ЗАКАЗ ✦ ПУФИКИ ✦ МЯГКИЕ УГОЛКИ ✦ ВАШИ РАЗМЕРЫ ✦ </span>
+        </div>
+    </div>
+
+    <!-- О НАС -->
+
+    <section class="about section" id="about">
+
+        <div class="about-image">
+            <img src="images/divan6.jpg" alt="Современный диван">
+            <div class="image-caption">ВАШ СТИЛЬ. НАША РАБОТА.</div>
+        </div>
+
+        <div class="about-content">
+            <span class="eyebrow">НЕ ПРОСТО МЕБЕЛЬ</span>
+
+            <h2>Ваши идеи — <em>наша работа.</em></h2>
+
+            <p>
+                Понравился диван в интернете, но его размеры
+                не подходят для вашей комнаты? Хотите изменить
+                цвет, ткань или конструкцию?
+            </p>
+
+            <p>
+                Мы изготавливаем мягкую мебель по индивидуальным
+                заказам. Вы выбираете дизайн, размеры и материалы,
+                а мы помогаем создать мебель под ваш интерьер.
+            </p>
+
+            <button class="text-button open-order">
+                Обсудить свою идею ↗
+            </button>
+        </div>
+
+    </section>
+
+    <!-- ГАЛЕРЕЯ -->
+
+    <section class="gallery-section section" id="gallery">
+
+        <div class="section-heading">
+            <div>
+                <span class="eyebrow">ВДОХНОВЛЯЙТЕСЬ</span>
+                <h2>Модели для <em>вдохновения.</em></h2>
+            </div>
+
+            <p>
+                Выберите понравившийся образец.
+                Размеры, цвет и материалы можно
+                изменить под ваши пожелания.
+            </p>
+        </div>
+
+        <div class="filters">
+            <button class="filter active" data-filter="all">Все модели</button>
+            <button class="filter" data-filter="sofa">Диваны</button>
+            <button class="filter" data-filter="puff">Пуфики</button>
+        </div>
+
+        <div class="gallery-grid">
+
+            <!-- ДИВАН 1 -->
+            <article class="product" data-category="sofa" data-name="Soft Corner">
+                <div class="product-image">
+                    <img src="images/divan1.jpg" alt="Диван Soft Corner" loading="lazy">
+                    <button class="zoom-btn" aria-label="Увеличить">↗</button>
+                    <button class="favorite-btn"
+        type="button"
+        aria-label="Добавить в избранное"
+        aria-pressed="false">
+    ♡
+</button>   
+                </div>
+                <div class="product-info">
+                    <div><small>ДИВАН / 01</small><h3>Soft Corner</h3></div>
+                    <button class="choose-btn">Хочу похожий ↗</button>
+                </div>
+            </article>
+
+            <!-- ДИВАН 2 -->
+            <article class="product" data-category="sofa" data-name="Cloud">
+                <div class="product-image">
+                    <img src="images/divan2.jpg" alt="Диван Cloud" loading="lazy">
+                    <button class="zoom-btn" aria-label="Увеличить">↗</button>
+                </div>
+                <div class="product-info">
+                    <div><small>ДИВАН / 02</small><h3>Cloud</h3></div>
+                    <button class="choose-btn">Хочу похожий ↗</button>
+                </div>
+            </article>
+
+            <!-- ДИВАН 3 -->
+            <article class="product" data-category="sofa" data-name="Smart">
+                <div class="product-image">
+                    <img src="images/divan3.jpg" alt="Диван Smart" loading="lazy">
+                    <button class="zoom-btn" aria-label="Увеличить">↗</button>
+                </div>
+                <div class="product-info">
+                    <div><small>ДИВАН / 03</small><h3>Smart</h3></div>
+                    <button class="choose-btn">Хочу похожий ↗</button>
+                </div>
+            </article>
+
+            <!-- ДИВАН 4 -->
+            <article class="product" data-category="sofa" data-name="Transform">
+                <div class="product-image">
+                    <img src="images/divan4.jpg" alt="Диван Transform" loading="lazy">
+                    <button class="zoom-btn" aria-label="Увеличить">↗</button>
+                </div>
+                <div class="product-info">
+                    <div><small>ДИВАН / 04</small><h3>Transform</h3></div>
+                    <button class="choose-btn">Хочу похожий ↗</button>
+                </div>
+            </article>
+
+            <!-- ДИВАН 5 -->
+            <article class="product" data-category="sofa" data-name="Classic">
+                <div class="product-image">
+                    <img src="images/divan5.jpg" alt="Диван Classic" loading="lazy">
+                    <button class="zoom-btn" aria-label="Увеличить">↗</button>
+                </div>
+                <div class="product-info">
+                    <div><small>ДИВАН / 05</small><h3>Classic</h3></div>
+                    <button class="choose-btn">Хочу похожий ↗</button>
+                </div>
+            </article>
+
+            <!-- ДИВАН 6 -->
+            <article class="product" data-category="sofa" data-name="Loft">
+                <div class="product-image">
+                    <img src="images/divan6.jpg" alt="Диван Loft" loading="lazy">
+                    <button class="zoom-btn" aria-label="Увеличить">↗</button>
+                </div>
+                <div class="product-info">
+                    <div><small>ДИВАН / 06</small><h3>Loft</h3></div>
+                    <button class="choose-btn">Хочу похожий ↗</button>
+                </div>
+            </article>
+
+            <!-- ДИВАН 7 -->
+            <article class="product" data-category="sofa" data-name="Terra">
+                <div class="product-image">
+                    <img src="images/divan7.jpg" alt="Диван Terra" loading="lazy">
+                    <button class="zoom-btn" aria-label="Увеличить">↗</button>
+                </div>
+                <div class="product-info">
+                    <div><small>ДИВАН / 07</small><h3>Terra</h3></div>
+                    <button class="choose-btn">Хочу похожий ↗</button>
+                </div>
+            </article>
+
+            <!-- ДИВАН 8 -->
+            <article class="product" data-category="sofa" data-name="Modern">
+                <div class="product-image">
+                    <img src="images/divan8.jpg" alt="Диван Modern" loading="lazy">
+                    <button class="zoom-btn" aria-label="Увеличить">↗</button>
+                </div>
+                <div class="product-info">
+                    <div><small>ДИВАН / 08</small><h3>Modern</h3></div>
+                    <button class="choose-btn">Хочу похожий ↗</button>
+                </div>
+            </article>
+
+            <!-- ПУФИК 1 -->
+            <article class="product" data-category="puff" data-name="Round">
+                <div class="product-image">
+                    <img src="images/puff1.jpg" alt="Пуфики Round" loading="lazy">
+                    <button class="zoom-btn" aria-label="Увеличить">↗</button>
+                </div>
+                <div class="product-info">
+                    <div><small>ПУФИК / 01</small><h3>Round</h3></div>
+                    <button class="choose-btn">Хочу похожий ↗</button>
+                </div>
+            </article>
+
+            <!-- ПУФИК 2 -->
+            <article class="product" data-category="puff" data-name="Long">
+                <div class="product-image">
+                    <img src="images/puff2.jpg" alt="Пуфик Long" loading="lazy">
+                    <button class="zoom-btn" aria-label="Увеличить">↗</button>
+                </div>
+                <div class="product-info">
+                    <div><small>ПУФИК / 02</small><h3>Long</h3></div>
+                    <button class="choose-btn">Хочу похожий ↗</button>
+                </div>
+            </article>
+
+            <!-- ПУФИК 3 -->
+            <article class="product" data-category="puff" data-name="Cube">
+                <div class="product-image">
+                    <img src="images/puff3.jpg" alt="Пуфик Cube" loading="lazy">
+                    <button class="zoom-btn" aria-label="Увеличить">↗</button>
+                </div>
+                <div class="product-info">
+                    <div><small>ПУФИК / 03</small><h3>Cube</h3></div>
+                    <button class="choose-btn">Хочу похожий ↗</button>
+                </div>
+            </article>
+
+        </div>
+
+        <p class="gallery-note">
+            Фотографии представлены как примеры дизайна.
+            Окончательная конструкция и материалы согласовываются индивидуально.
+        </p>
+    </section>
+
+    <!-- ЭТАПЫ -->
+
+    <section class="steps-section section" id="steps">
+
+        <div class="center-heading">
+            <span class="eyebrow">КАК МЫ РАБОТАЕМ</span>
+            <h2>От фотографии до <em>вашего дивана.</em></h2>
+        </div>
+
+        <div class="steps-grid">
+
+            <div class="step">
+                <span class="step-number">01</span>
+                <div class="step-icon">▧</div>
+                <h3>Отправляете фото</h3>
+                <p>Покажите понравившуюся модель или расскажите свою идею.</p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">02</span>
+                <div class="step-icon">⌗</div>
+                <h3>Указываете размеры</h3>
+                <p>Сообщите длину, ширину, высоту и другие пожелания.</p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">03</span>
+                <div class="step-icon">◈</div>
+                <h3>Согласовываем детали</h3>
+                <p>Обсуждаем ткань, цвет, стоимость и сроки изготовления.</p>
+            </div>
+
+            <div class="step">
+                <span class="step-number">04</span>
+                <div class="step-icon">✦</div>
+                <h3>Изготавливаем</h3>
+                <p>После согласования приступаем к выполнению заказа.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ПРИЗЫВ К ЗАКАЗУ -->
+
+    <section class="cta">
+        <span class="eyebrow">ВАША ИДЕЯ НАЧИНАЕТСЯ ЗДЕСЬ</span>
+
+        <h2>
+            Есть фотография?<br>
+            <em>Давайте воплотим её.</em>
+        </h2>
+
+        <p>
+            Отправьте пример мебели и необходимые размеры.
+            Мы свяжемся с вами для обсуждения деталей.
+        </p>
+
+        <button class="btn btn-light open-order">
+            Оставить заявку ↗
+        </button>
+    </section>
+
+</main>
+
+<!-- ПОДВАЛ -->
+
+<footer id="contacts">
+
+    <div class="footer-grid">
+
+        <div class="footer-brand">
+            <a href="#home" class="logo">FORMA<span>.</span></a>
+            <p>
+                Мягкая мебель по индивидуальным размерам,
+                фотографиям и вашим идеям.
+            </p>
+        </div>
+
+        <div class="footer-column">
+            <h4>Навигация</h4>
+            <a href="#home">Главная</a>
+            <a href="#gallery">Наши модели</a>
+            <a href="#about">О нас</a>
+            <a href="#steps">Как заказать</a>
+        </div>
+
+        <div class="footer-column">
+            <h4>Контакты</h4>
+            <a href="#" id="footerWhatsapp">Написать в WhatsApp ↗</a>
+            <p>Телефон: +992 00 377 31 00</p>
+            <p>Худжанд, Таджикистан</p>
+            <p>
+    Instagram:
+    <a href="https://www.instagram.com/parvizjon_y/"
+       target="_blank" rel="noopener noreferrer">
+        @parvizjon_y
+    </a>
+</p>
+        </div>
+
+    </div>
+
+    <div class="footer-bottom">
+        <span>© 2026 FORMA</span>
+        <span>Мебель, созданная для вас.</span>
+    </div>
+
+</footer>
+
+<!-- ФОРМА ЗАКАЗА -->
+
+<div class="modal" id="orderModal" role="dialog"
+     aria-modal="true" aria-label="Форма заказа">
+
+    <div class="modal-content">
+
+        <button class="close-modal" id="closeModal"
+                aria-label="Закрыть">×</button>
+
+        <span class="eyebrow">ИНДИВИДУАЛЬНЫЙ ЗАКАЗ</span>
+
+        <h2>Расскажите о вашей <em>идее.</em></h2>
+
+        <p class="form-intro">
+            Заполните форму, чтобы подготовить заявку в WhatsApp.
+        </p>
+
+        <form id="orderForm">
+
+            <div class="form-row">
+
+                <div class="field">
+                    <label for="clientName">Ваше имя *</label>
+                    <input type="text" id="clientName"
+                           placeholder="Ваше имя" required>
+                </div>
+
+                <div class="field">
+                    <label for="clientPhone">Телефон *</label>
+                    <input type="tel" id="clientPhone"
+                           placeholder="+992 ..." required>
+                </div>
+
+            </div>
+
+            <div class="field">
+                <label for="furnitureType">Тип мебели</label>
+                <select id="furnitureType">
+                    <option>Диван</option>
+                    <option>Угловой диван</option>
+                    <option>Пуфик</option>
+                    <option>Банкетка</option>
+                    <option>Другое</option>
+                </select>
+            </div>
+
+            <div class="field">
+                <label for="selectedModel">Выбранная модель</label>
+                <input type="text" id="selectedModel"
+                       placeholder="Название или своя идея">
+            </div>
+
+            <label class="dimensions-label">
+                Размеры в сантиметрах
+            </label>
+
+            <div class="form-row dimensions">
+
+                <div class="field">
+                    <input type="number" id="length"
+                           min="1" placeholder="Длина">
+                </div>
+
+                <div class="field">
+                    <input type="number" id="width"
+                           min="1" placeholder="Ширина">
+                </div>
+
+                <div class="field">
+                    <input type="number" id="height"
+                           min="1" placeholder="Высота">
+                </div>
+
+            </div>
+
+            <div class="field">
+                <label for="fabric">Ткань и цвет</label>
+                <input type="text" id="fabric"
+                       placeholder="Например: бежевый велюр">
+            </div>
+
+            <div class="field">
+                <label for="referencePhoto">Фотография мебели</label>
+
+                <label class="upload-area" for="referencePhoto">
+                    <span>＋</span>
+                    <strong>Выбрать фотографию</strong>
+                    <small id="fileName">JPG, PNG или WEBP</small>
+                </label>
+
+                <input type="file" id="referencePhoto"
+                       accept="image/*" hidden>
+            </div>
+
+            <div class="field">
+                <label for="comment">Дополнительные пожелания</label>
+                <textarea id="comment" rows="4"
+                    placeholder="Например: нужны ящики для хранения"></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-dark submit-btn">
+                Продолжить в WhatsApp ↗
+            </button>
+
+            <p class="form-note">
+                Фотографию нужно будет прикрепить в WhatsApp вручную.
+            </p>
+
+        </form>
+
+    </div>
+</div>
+
+<!-- УВЕЛИЧЕНИЕ ФОТО -->
+
+<div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="closeLightbox"
+            aria-label="Закрыть">×</button>
+    <img id="lightboxImage" alt="Увеличенная фотография">
+</div>
+
+</body>
+</html>
